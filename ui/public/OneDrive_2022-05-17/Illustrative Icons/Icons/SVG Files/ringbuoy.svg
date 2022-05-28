@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="ringbuoy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="36" cy="36.1" r="24"/>
+	<circle class="st0" cx="36" cy="36.1" r="12"/>
+	<line class="st0" x1="31.8" y1="12.5" x2="31.8" y2="24.7"/>
+	<line class="st0" x1="40.2" y1="12.5" x2="40.2" y2="24.7"/>
+	<line class="st0" x1="31.8" y1="47.7" x2="31.8" y2="59.9"/>
+	<line class="st0" x1="40.2" y1="47.7" x2="40.2" y2="59.9"/>
+	<line class="st0" x1="59.7" y1="32" x2="47.5" y2="32"/>
+	<line class="st0" x1="59.7" y1="40.3" x2="47.5" y2="40.3"/>
+	<line class="st0" x1="24.5" y1="32" x2="12.3" y2="32"/>
+	<line class="st0" x1="24.5" y1="40.3" x2="12.3" y2="40.3"/>
+	<path class="st0" d="M10.3,47.2c2.8,6.5,8,11.7,14.5,14.5"/>
+	<path class="st0" d="M47.2,61.8c6.5-2.8,11.7-8,14.5-14.5"/>
+	<path class="st0" d="M61.7,24.8c-2.8-6.4-8-11.6-14.4-14.4"/>
+	<path class="st0" d="M24.8,10.4c-6.4,2.8-11.6,8-14.4,14.4"/>
+</g>
+</svg>

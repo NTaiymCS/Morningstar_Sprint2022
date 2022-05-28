@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="stopwatch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="36" cy="38.1" r="24.9"/>
+	<line class="st0" x1="36" y1="16" x2="36" y2="38.1"/>
+	<line class="st0" x1="21.7" y1="23.8" x2="21" y2="23.1"/>
+	<line class="st0" x1="51" y1="53.1" x2="50.3" y2="52.4"/>
+	<line class="st0" x1="50.3" y1="23.8" x2="51" y2="23.1"/>
+	<line class="st0" x1="21" y1="53.1" x2="21.7" y2="52.4"/>
+	<line class="st0" x1="36" y1="59.3" x2="36" y2="58.3"/>
+	<line class="st0" x1="15.8" y1="38.1" x2="14.8" y2="38.1"/>
+	<line class="st0" x1="57.2" y1="38.1" x2="56.2" y2="38.1"/>
+	<line class="st0" x1="31" y1="8.9" x2="41" y2="8.9"/>
+	<line class="st0" x1="36" y1="9" x2="36" y2="11.4"/>
+	<line class="st0" x1="58.6" y1="20.5" x2="53.7" y2="15.8"/>
+</g>
+</svg>

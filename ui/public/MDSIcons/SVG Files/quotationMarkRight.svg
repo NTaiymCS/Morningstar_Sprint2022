@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:none;stroke:#231F20;stroke-width:0.35;stroke-miterlimit:10;}
+	.st2{display:inline;}
+	.st3{clip-path:url(#SVGID_2_);fill:none;stroke:#231F20;stroke-width:0.35;stroke-miterlimit:10;}
+	.st4{display:inline;fill:none;stroke:#FFFF00;stroke-width:0.35;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g id="Guidlines" class="st0">
+	
+		<text transform="matrix(1 0 0 1 93.7937 37.0074)" style="display:inline;fill:#519136; font-family:'UniversNextforMORN-CnLt'; font-size:7.7381px;"> </text>
+	
+		<text transform="matrix(1 0 0 1 108.2795 37.0074)" style="display:inline;fill:#231F20; font-family:'UniversNextforMORN-CnLt'; font-size:7.7381px;">This is how to use </text>
+	<text transform="matrix(1 0 0 1 93.7937 46.2925)" class="st2"><tspan x="0" y="0" style="fill:#231F20; font-family:'UniversNextforMORN-CnLt'; font-size:7.7381px;">quote marks</tspan><tspan x="33.6" y="0" style="fill:#231F20; font-family:'UniversNextforMORN-CnLt'; font-size:7.7381px;">.</tspan></text>
+	<path class="st1" d="M136.5,46.3v-5.6h-5.6v9.5L136.5,46.3z M142.9,46.3v-5.6h-5.6v9.5L142.9,46.3z"/>
+	<g class="st2">
+		<defs>
+			<rect id="SVGID_1_" x="90.3" y="27.4" width="146.3" height="47.1"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<path class="st3" d="M100.2,31.4V37h5.6v-9.5L100.2,31.4z M93.9,31.4V37h5.6v-9.5L93.9,31.4z"/>
+	</g>
+	<line class="st4" x1="78.1" y1="37.2" x2="119.7" y2="37.2"/>
+	<text transform="matrix(1 0 0 1 77.9866 30.529)" class="st2"><tspan x="0" y="0" style="fill:#FFFF00; font-family:'UniversNextforMORN-CnLt'; font-size:4px;">Base align  </tspan><tspan x="0" y="4" style="fill:#FFFF00; font-family:'UniversNextforMORN-CnLt'; font-size:4px;">left quote</tspan></text>
+	<line class="st4" x1="118.6" y1="40.4" x2="169.3" y2="40.4"/>
+	<text transform="matrix(1 0 0 1 145.6302 45.0718)" class="st2"><tspan x="0" y="0" style="fill:#FFFF00; font-family:'UniversNextforMORN-CnLt'; font-size:4px;">Cap height align  </tspan><tspan x="0" y="4" style="fill:#FFFF00; font-family:'UniversNextforMORN-CnLt'; font-size:4px;">right quote</tspan></text>
+</g>
+<g id="quotationmarks">
+	<g>
+		<polygon class="st5" points="37.1,34.9 37.1,49.4 51.5,49.4 51.5,24.9 		"/>
+		<polygon class="st5" points="20.6,34.9 20.6,49.4 35,49.4 35,24.9 		"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,53 @@
+{
+    "version": {
+        "iam": "2010-05-08",
+        "lambda": "2015-03-31"
+    },
+    "lambda": {
+        "FunctionName": "mstar-xxx-lambda-node-template",
+        "Environment": {
+          "Variables": {
+            "ORIGINS": "morningstar.com"
+          }
+        },
+        "Handler": "index.handler",
+        "Runtime": "nodejs12.x",
+        "MemorySize": 1024,
+        "Tags": {
+            "TID": "XXX",
+            "MANAGED": "AWS-SDK",
+            "FUNCTION": "APPLICATION"
+        },
+        "Timeout": 5
+    },
+    "response": {
+        "headers": {
+            "Content-Type": "application/json",
+            "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+            "Access-Control-Allow-Headers": "Content-Type,X-CSRF-TOKEN",
+            "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, HEAD",
+            "Access-Control-Allow-Credentials": "true",
+            "Access-Control-Allow-Origin": ""
+        }
+    },
+    "executionRole": {
+        "AttachRolePolicies": [
+            "arn:aws:iam::aws:policy/CloudWatchLogsFullAccess"
+        ],
+        "AssumeRolePolicy": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": [
+                            "apigateway.amazonaws.com",
+                            "lambda.amazonaws.com"
+                        ]
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        }
+    }
+}

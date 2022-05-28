@@ -1,0 +1,125 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "mstar-sprintern2022-api1",
+    "description": "Get questions and answers fields for a client's retirement goal form. Submit form to store the client's form responses into the database. Get a specific form's responses for a client.",
+    "version" : "2022-05-20T19:55:53Z"
+  },
+  "servers" : [ {
+    "url" : "https://wllfhe2z9k.execute-api.us-east-1.amazonaws.com/{basePath}",
+    "variables" : {
+      "basePath" : {
+        "default" : "/beta"
+      }
+    }
+  } ],
+  "paths" : {
+    "/data/{ID}" : {
+      "get" : {
+        "summary": "Retrieve the form responses for a client.",
+        "description": "Retrieve the form responses associated with a client's unique 6-digit ID.",
+        "tags": [
+          "clients"
+        ],
+        "parameters" : [ {
+          "name" : "ID",
+          "in" : "path",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Empty"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:579879500798:function:mstar-sprintern2022-challengeproject/invocations",
+          "responses" : {
+            "default" : {
+              "statusCode" : "200"
+            }
+          },
+          "passthroughBehavior" : "when_no_match",
+          "contentHandling" : "CONVERT_TO_TEXT",
+          "type" : "aws_proxy"
+        }
+      }
+    },
+    "/data" : {
+      "get" : {
+        "summary": "Retrieve the form responses.",
+        "description": "Retrieve the form responses.",
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Empty"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:579879500798:function:mstar-sprintern2022-challengeproject/invocations",
+          "responses" : {
+            "default" : {
+              "statusCode" : "200"
+            }
+          },
+          "passthroughBehavior" : "when_no_match",
+          "contentHandling" : "CONVERT_TO_TEXT",
+          "type" : "aws_proxy"
+        }
+      },
+      "put" : {
+        "summary": "Enter and store the form responses for a client.",
+        "description": "Enter and store the form responses for a client, associating it with their unique 6-digit ID.",
+        "responses" : {
+          "200" : {
+            "description" : "200 response",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Empty"
+                }
+              }
+            }
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "httpMethod" : "POST",
+          "uri" : "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:579879500798:function:mstar-sprintern2022-challengeproject/invocations",
+          "responses" : {
+            "default" : {
+              "statusCode" : "200"
+            }
+          },
+          "passthroughBehavior" : "when_no_match",
+          "contentHandling" : "CONVERT_TO_TEXT",
+          "type" : "aws_proxy"
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "Empty" : {
+        "title" : "Empty Schema",
+        "type" : "object"
+      }
+    }
+  }
+}

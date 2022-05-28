@@ -1,0 +1,31 @@
+{
+    "name": "aws-template-lambda",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "build": "node ./bin/build.js",
+        "create": "bash ./bin/runner.sh create",
+        "update": "bash ./bin/runner.sh update",
+        "promote": "bash ./bin/runner.sh promote",
+        "destroy": "bash ./bin/runner.sh destroy",
+        "unit": "jest",
+        "lint": "eslint --ext .js ./src ./test/unit",
+        "test": "npm run lint && npm run unit"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.5",
+        "@babel/preset-env": "^7.10.4",
+        "archiver": "^3.1.1",
+        "aws-sdk": "^2.714.0",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.1.0",
+        "eslint": "^5.15.1",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-plugin-import": "^2.22.0",
+        "fs-extra": "^7.0.1",
+        "jest": "^26.1.0",
+        "sinon": "^7.5.0",
+        "terser-webpack-plugin": "^1.3.0",
+        "webpack": "^4.43.0"
+    }
+}

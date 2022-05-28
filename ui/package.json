@@ -1,0 +1,79 @@
+{
+  "name": "greetings",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@mds/alert": "^4.2.1",
+    "@mds/button": "^3.3.9",
+    "@mds/button-group": "^3.0.11",
+    "@mds/card": "^3.2.3",
+    "@mds/checkbox": "^4.2.3",
+    "@mds/constants": "^3.0.4",
+    "@mds/data-table": "^4.1.13",
+    "@mds/dialog": "^3.1.2",
+    "@mds/favicon": "^3.0.1",
+    "@mds/fieldset": "^3.3.4",
+    "@mds/form": "^3.4.6",
+    "@mds/icon": "^4.5.0",
+    "@mds/input": "^3.6.15",
+    "@mds/layout-grid": "^3.0.4",
+    "@mds/list-group": "^4.1.9",
+    "@mds/modal": "^3.0.37",
+    "@mds/module-container": "^3.2.4",
+    "@mds/notification": "^4.0.2",
+    "@mds/page-shell": "^4.4.10",
+    "@mds/popover": "^4.0.2",
+    "@mds/radio-button": "^3.2.1",
+    "@mds/search-field": "^4.3.2",
+    "@mds/section": "^5.1.16",
+    "@mds/select": "^4.1.9",
+    "@mds/tooltip": "^5.0.6",
+    "@mds/typography": "^3.1.9",
+    "core-js": "^3.7.0",
+    "css-loader": "^4.2.0",
+    "idle-js": "^1.2.0",
+    "jwt-decode": "^3.1.2",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vue-style-loader": "^4.1.0",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-plugin-eslint": "^4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-lodash": "3.3.4",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie < 11"
+  ]
+}

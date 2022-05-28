@@ -1,0 +1,50 @@
+#!groovy
+ 
+ 
+echo "${BRANCH_NAME}"
+ 
+def BranchName_split_list = "${BRANCH_NAME}".split('PR-')
+def BranchName_split_size = BranchName_split_list.size()
+if (BranchName_split_size != 1){   
+    Trigger_Source = 'PR'
+}
+else{
+    Trigger_Source = 'Merge'
+}
+ 
+pipeline {
+    agent {     
+        label 'awsjenklinux'
+    }
+     
+    environment {
+        TRIGGER="${Trigger_Source}"
+         
+        SONAR_SCANNER = "${tool 'Sonar Runner 4.0-linux-win'}"
+        SONAR_PROJECT_KEY = "FP-PID0559-template-lambda-node"
+    }
+ 
+    stages {     
+        stage('Test') {
+            steps {
+                sh '''
+                    npm install
+                    npm run test
+                '''
+            }
+        }  
+        stage('Code Scanning'){
+            steps{
+                withSonarQubeEnv('Sonar') {
+                    sh '''
+                    if [ ${TRIGGER} = "PR" ]; then
+                        ${SONAR_SCANNER}/bin/sonar-scanner -Dsonar.host.url="${SONAR_HOST_URL}" -Dsonar.branch.name=pull-requests/${CHANGE_ID} -Dsonar.branch.target=${CHANGE_BRANCH}
+                    else
+                        ${SONAR_SCANNER}/bin/sonar-scanner -Dsonar.host.url="${SONAR_HOST_URL}" -Dsonar.branch.name=$BRANCH_NAME
+                    fi
+                    '''
+                }
+            }
+        }
+    }
+}
